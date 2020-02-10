@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 網頁練習範例 - HTML5,CSS3,Bootstrap,jQuery網頁設計基礎班</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- TODO: 客製化Bootstrap CSS -->
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 連結Bootstrap所需要的js -->
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <!-- TODO: 設定Navbar緊貼畫面上緣 -->
+    <!-- TODO: 點擊滾動目標 -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introSection">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#featuresSection">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviewsSection">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallerySection">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <!-- TODO: 為Jumbotron加入背景圖被設定文字為白色 -->
+    <header id="header" class="jumbotron">
+        <div class="container">
+            <h1>Building something remarkable</h1>
+            <p>We focus on providing the project management &amp; data storage solutions.</p>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- introSection -->
+    <!-- TODO: 設定introSection 上下padding為5倍 -->
+    <section id="introSection">
+        <h1 class="section-title text-center text-secondary mb-5">Intro</h1>
+        <div class="container">
+            <!-- TODO: 修正排版為三項排一排 並置中文字-->
+            <div>
+                <div>
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">Fast Deploy</h3>
+                        <p>We'll deploy our service with shortest time.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-briefcase fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">Stable</h3>
+                        <p>Everythings is setup ready, just waiting for your order.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-gem fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">Persistence</h3>
+                        <p>Our software &amp; hardware service is always standby.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO: 設定此區塊距離上方5倍margin -->
+            <!-- TODO: 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
+            <div>
+                <div class="text-center">
+                    <i class="fas fa-tree fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Cozy Office</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-coffee fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Free coffee bar</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-id-card fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Profesional Team</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-language fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Linguist</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-rocket fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Hackers Spirit</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-graduation-cap fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Self-Learning</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+    <!-- featuresSection -->
+    <section id="featuresSection" class="py-5 bg-secondary text-white">
+        <div class="container">
+            <h1 class="section-title mb-5 text-center">Features</h1>
+            <!-- TODO: 設定此區內文字 寬度為8格網格 但是必須置中 -->
+            <div>
+                <div>
+                    <!-- TODO: 為article1 article2 設置collapse互動方式 -->
+                    <button class="btn btn-primary">Team</button>
+                    <button class="btn btn-primary">Location</button>
+                    <article class="my-3" id="article1">
+                        <h3>Team</h3>
+                        <p>Our team members started with only 10 people. We're Website developer, Security engineer,
+                            Graphic
+                            Designer, Information Architect , But before the company scaled up, we're all wears more
+                            than
+                            one hat. We provide different kinds of
+                            <strong>Project management, Security and Data Storage solution package</strong> for our
+                            customers </p>
+                    </article>
+                    <article class="my-3" id="article2">
+                        <h3>Location</h3>
+                        <p>We're based in Taipei Taiwan. There are several international branch offices in Hong Kong,
+                            New York,
+                            Albuquerque, Dublin and GuangDong. You could contact the nearest office for you, or if
+                            you're
+                            interested to work with us. please follow our recruit news</p>
+                    </article>
+                    <!-- 導覽按鈕 -->
+                    <nav class="nav nav-pills">
+                        <a class="nav-link active" href="#article3">Environment</a>
+                        <a class="nav-link" href="#article4">Philosophy</a>
+                    </nav>
+                    <!-- TODO: 為article3 article4 設置tab互動方式 -->
+                    <div>
+                        <article id="article3" class="my-3">
+                            <h3>Environment</h3>
+                            <p>We have a cozy office environment not just create casual atmosphere for daily working
+                                time, but also
+                                encourage our employee stay for the internal self-learning project hosted by our HR and
+                                Software
+                                teams. It’s fun to learn challenging new things. We provide lots of courses in the
+                                topic of
+                                <strong>Languages learning, Software skill and Negotiation skill trainings.</strong>
+                                Check out more details
+                            </p>
+                        </article>
+                        <article id="article4" class="my-3">
+                            <h3>Philosophy</h3>
+                            <p>We always keep our bussiness and products simple. So it will always be easy to learn and
+                                use. Our
+                                goal is making it simple but effective. Even though it might be the first time to use
+                                that kinds
+                                of product, we'll try to make sure every steps will be clear to understand for you. If
+                                needs
+                                any helps, our technical support team will be always standing by.
+                            </p>
+                        </article>
+                    </div>
+                    <!-- TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featuresSection end -->
+    <!-- reviewsSection -->
+    <section id="reviewsSection" class="py-5">
+        <!-- TODO: 使用輪播(Carousel)元件放入以下兩頁內容 -->
+        <!-- 第一頁 內容 -->
+        <div class="row justify-content-center py-5">
+            <div class="col-sm-2">
+                <!-- 設定使用者照片變圓型 -->
+                <img class="w-100 rounded-circle" src="./img/reviewer-1.jpg" alt="user photo">
+            </div>
+            <div class="col-sm-6">
+                <h3 class="title">Food and beverage manager</h3>
+                <h4 class="name">Robert A. Welch</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo provident quisquam a deleniti laborum
+                    omnis dicta aliquam repellat deserunt accusantium. Esse velit atque deleniti. Earum maxime
+                    necessitatibus veritatis vitae libero eveniet, accusantium culpa voluptas ipsam nisi non id neque
+                    atque minus qui, natus ducimus dolores est, dolor beatae? Quis esse eius facilis minima aut cum vero
+                    ex dolore obcaecati sint?</p>
+            </div>
+        </div>
+        <!-- 第一頁 內容 結束 -->
+        <!-- 第二頁 -->
+        <div class="row justify-content-center py-5">
+            <div class="col-sm-2">
+                <!-- 設定使用者照片變圓型 -->
+                <img class="w-100 rounded-circle" src="./img/reviewer-2.jpg" alt="user photo">
+            </div>
+            <div class="col-sm-6">
+                <h3 class="title">Environmental scientist</h3>
+                <h4 class="name">Lorraine J. Rollins</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo provident quisquam a deleniti laborum
+                    omnis dicta aliquam repellat deserunt accusantium. Esse velit atque deleniti. Earum maxime
+                    necessitatibus veritatis vitae libero eveniet, accusantium culpa voluptas ipsam nisi non id neque
+                    atque minus qui, natus ducimus dolores est, dolor beatae? Quis esse eius facilis minima aut cum vero
+                    ex dolore obcaecati sint?</p>
+            </div>
+        </div>
+        <!-- 第二頁 結束 -->
+    </section>
+    <!-- reviewsSection end -->
+    <!-- modalSection -->
+    <section id="modalSection" class="bg-secondary py-5">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-3">
+                <h4 class="text-center text-white mb-4">New Version Released!</h4>
+                <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
+                <button class="btn btn-lg btn-block btn-primary">Open Modal!</button>
+            </div>
+        </div>
+    </section>
+    <!-- TODO: 加入彈出式視窗 Modal -->
+    <!-- modalSection end -->
+    <!-- gallerySection -->
+    <section id="gallerySection">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="galleryImage1" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo1</div>
+                </div>
+                <div id="galleryImage2" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo2</div>
+                </div>
+                <div id="galleryImage3" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo3</div>
+                </div>
+                <div id="galleryImage4" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo4</div>
+                </div>
+                <div id="galleryImage5" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo5</div>
+                </div>
+                <div id="galleryImage6" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo6</div>
+                </div>
+                <div id="galleryImage7" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo7</div>
+                </div>
+                <div id="galleryImage8" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Photo8</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallerySection end -->
+    <!-- footer -->
+    <!-- footer -->
+    <footer id="footer" class="pt-5 bg-secondary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h4>Contact Us</h4>
+                    <a href="mailto:service@brand.com">service@brand.com</a>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Product</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Enterprice</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Resource</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Guilde</a>
+                        </li>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">API</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark mt-5 py-2">
+            <p class="text-center">&copy; Copy right 2020</p>
+        </div>
+    </footer>
+    <!-- TODO: 設定置底返回按鈕 返回按鈕滾動動畫 -->
+    <button id="goBackBtn" class="bg-primary">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</body>
+
+</html>
