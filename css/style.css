@@ -51,6 +51,7 @@ button:focus {
 [id^='galleryImage'] {
     background-size: cover;
     height: 250px;
+    filter: grayscale(100%);
     transition: all .5s ease;
 }
 
@@ -62,7 +63,7 @@ button:focus {
 }
 
 [id^='galleryImage']:hover {
-    
+    filter: grayscale(0%);
 }
 
 [id^='galleryImage']:hover>.gallery-text {
