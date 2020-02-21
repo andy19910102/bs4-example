@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- TODO: 客製化Bootstrap CSS -->
+
     <!-- 使用font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -62,8 +63,7 @@
     </nav>
     <!-- navbar end -->
     <!-- header -->
-    <!-- TODO: 為Jumbotron加入背景圖被設定文字為白色 -->
-    <header id="header" class="jumbotron">
+    <header id="header" class="jumbotron text-center text-white bg-dark">
         <div class="container">
             <h1>Building something remarkable</h1>
             <p>We focus on providing the project management &amp; data storage solutions.</p>
@@ -140,9 +140,9 @@
     <section id="featuresSection" class="py-5 bg-secondary text-white">
         <div class="container">
             <h1 class="section-title mb-5 text-center">Features</h1>
-            <!-- TODO: 設定此區內文字 寬度為8格網格 但是必須置中 -->
-            <div>
-                <div>
+            <!-- TODO: 設定row內的區塊置中對齊 -->
+            <div class="row">
+                <div class="col-sm-10 col-md-8">
                     <!-- TODO: 為article1 article2 設置collapse互動方式 -->
                     <button class="btn btn-primary">Team</button>
                     <button class="btn btn-primary">Location</button>
@@ -196,6 +196,7 @@
                         </article>
                     </div>
                     <!-- TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc -->
+
                 </div>
             </div>
         </div>
@@ -221,7 +222,7 @@
             </div>
         </div>
         <!-- 第一頁 內容 結束 -->
-        <!-- 第二頁 -->
+        <!-- 第二頁 內容 -->
         <div class="row justify-content-center py-5">
             <div class="col-sm-2">
                 <!-- 設定使用者照片變圓型 -->
@@ -237,7 +238,7 @@
                     ex dolore obcaecati sint?</p>
             </div>
         </div>
-        <!-- 第二頁 結束 -->
+        <!-- 第二頁 內容 結束 -->
     </section>
     <!-- reviewsSection end -->
     <!-- modalSection -->
