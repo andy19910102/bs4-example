@@ -72,8 +72,6 @@ button:focus {
 =                  Gallery                    =
 =============================================*/
 
-/* TODO: 設定Hover特效 */
-
 [id^='galleryImage'] {
     background-size: cover;
     height: 250px;
