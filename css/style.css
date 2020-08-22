@@ -72,29 +72,32 @@ button:focus {
 =                  Gallery                    =
 =============================================*/
 
-[id^='galleryImage'] {
+.gallery-block,
+.gallery-text {
+    transition: all .5s ease-out;
+}
+
+.gallery-block {
     background-size: cover;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     filter: grayscale(100%);
-    transition: all .5s ease;
 }
 
-[id^='galleryImage']>.gallery-text {
+.gallery-text {
     color: white;
     font-weight: 700;
     text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
     text-align: center;
-    transition: all .5s ease;
 }
 
-[id^='galleryImage']:hover {
+.gallery-block:hover {
     filter: grayscale(0%);
 }
 
-[id^='galleryImage']:hover>.gallery-text {
+.gallery-block:hover .gallery-text {
     
 }
 

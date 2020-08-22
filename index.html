@@ -21,9 +21,8 @@
 <body>
     <!-- navbar -->
     <!-- 使用Boostrap Navbar -->
-    <!-- TODO: 設定Navbar緊貼畫面上緣 -->
     <!-- TODO: 點擊滾動目標 -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,12 +56,12 @@
     <!-- header end -->
     <!-- introSection -->
     <!-- TODO: 設定introSection 上下padding為5倍 -->
-    <section id="introSection">
+    <section id="introSection" class="">
         <h1 class="section-title text-center text-secondary mb-5">Intro</h1>
         <div class="container">
             <!-- TODO: 修正排版為三項排一排 -->
-            <div>
-                <div>
+            <div class="">
+                <div class="">
                     <div class="intro-box">
                         <div class="icon text-primary py-3">
                             <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i>
@@ -72,7 +71,7 @@
                         <p>We'll deploy our service with shortest time.</p>
                     </div>
                 </div>
-                <div>
+                <div class="">
                     <div class="intro-box">
                         <div class="icon text-primary py-3">
                             <i class="fas fa-briefcase fa-5x" aria-hidden="true"></i>
@@ -82,7 +81,7 @@
                         <p>Everythings is setup ready, just waiting for your order.</p>
                     </div>
                 </div>
-                <div>
+                <div class="">
                     <div class="intro-box">
                         <div class="icon text-primary py-3">
                             <i class="fas fa-gem fa-5x" aria-hidden="true"></i>
@@ -95,7 +94,7 @@
             </div>
             <!-- TODO: 設定此區塊距離上方5倍margin -->
             <!-- TODO: 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
-            <div>
+            <div class="">
                 <div class="text-center">
                     <i class="fas fa-tree fa-2x text-secondary" aria-hidden="true"></i>
                     <h5 class="mt-3 text-secondary">Cozy Office</h5>
@@ -195,7 +194,7 @@
         <!-- TODO: 使用輪播(Carousel)元件放入以下兩頁內容 -->
         <!-- 第一頁 內容 -->
         <div class="row justify-content-center py-5">
-            <div class="col-sm-2">
+            <div class="col-sm-2 col-4">
                 <!-- 設定使用者照片變圓型 -->
                 <img class="w-100 rounded-circle" src="./img/reviewer-1.jpg" alt="user photo">
             </div>
@@ -212,7 +211,7 @@
         <!-- 第一頁 內容 結束 -->
         <!-- 第二頁 內容 -->
         <div class="row justify-content-center py-5">
-            <div class="col-sm-2">
+            <div class="col-sm-2 col-4">
                 <!-- 設定使用者照片變圓型 -->
                 <img class="w-100 rounded-circle" src="./img/reviewer-2.jpg" alt="user photo">
             </div>
@@ -231,11 +230,13 @@
     <!-- reviewsSection end -->
     <!-- modalSection -->
     <section id="modalSection" class="bg-secondary py-5">
-        <div class="row justify-content-center my-5">
-            <div class="col-md-3">
-                <h4 class="text-center text-white mb-4">New Version Released!</h4>
-                <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
-                <button class="btn btn-lg btn-block btn-primary">Open Modal!</button>
+        <div class="container">
+            <div class="row justify-content-center my-5">
+                <div class="col-md-3">
+                    <h4 class="text-center text-white mb-4">New Version Released!</h4>
+                    <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
+                    <button class="btn btn-lg btn-block btn-primary">Open Modal!</button>
+                </div>
             </div>
         </div>
     </section>
@@ -245,28 +246,28 @@
     <section id="gallerySection">
         <div class="container-fluid">
             <div class="row">
-                <div id="galleryImage1" class="col-md-3 col-sm-6">
+                <div id="galleryImage1" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo1</div>
                 </div>
-                <div id="galleryImage2" class="col-md-3 col-sm-6">
+                <div id="galleryImage2" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo2</div>
                 </div>
-                <div id="galleryImage3" class="col-md-3 col-sm-6">
+                <div id="galleryImage3" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo3</div>
                 </div>
-                <div id="galleryImage4" class="col-md-3 col-sm-6">
+                <div id="galleryImage4" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo4</div>
                 </div>
-                <div id="galleryImage5" class="col-md-3 col-sm-6">
+                <div id="galleryImage5" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo5</div>
                 </div>
-                <div id="galleryImage6" class="col-md-3 col-sm-6">
+                <div id="galleryImage6" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo6</div>
                 </div>
-                <div id="galleryImage7" class="col-md-3 col-sm-6">
+                <div id="galleryImage7" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo7</div>
                 </div>
-                <div id="galleryImage8" class="col-md-3 col-sm-6">
+                <div id="galleryImage8" class="col-md-3 col-sm-6 gallery-block">
                     <div class="gallery-text">Photo8</div>
                 </div>
             </div>
@@ -354,7 +355,6 @@
         </div>
     </div>
     <!-- ad-box end -->
-    <!-- TODO: 設定置底返回按鈕 返回按鈕滾動動畫 -->
     <button id="goBackBtn" class="bg-primary">
         <i class="fas fa-chevron-up"></i>
     </button>
