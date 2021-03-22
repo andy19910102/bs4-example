@@ -181,10 +181,10 @@ footer ul {
 }
 
 /*=============================================
-=                   AD-BOX                    =
+=                  SIDE-BOX                   =
 =============================================*/
 
-.ad-box {
+.side-box {
     width: 300px;
     position: fixed;
     right: -275px;
@@ -198,7 +198,7 @@ footer ul {
     transition: all .3s ease;
 }
 
-.ad-box.active {
+.side-box.active {
     right: 0px;
 }
 
