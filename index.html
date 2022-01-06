@@ -23,7 +23,6 @@
 <body>
     <!-- navbar -->
     <!-- 使用Boostrap Navbar -->
-    <!-- TODO: 點擊滾動目標 -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <!-- 導覽列左上角的文字 -->
         <a class="navbar-brand" href="#">My Website</a>
@@ -191,61 +190,18 @@
                             </p>
                         </article>
                     </div>
-                    <!-- TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc -->
-
                 </div>
             </div>
         </div>
     </section>
     <!-- featuresSection end -->
+
     <!-- TODO: 產生一組輪播元件輪播一系列圖片 -->
     <!-- 快捷鍵: b4-carousel-default -->
     <!-- 圖片輪播 -->
 
     <!-- 圖片輪播 end -->
-    <!-- reviewsSection -->
-    <section id="reviewsSection" class="py-5">
-        <!-- TODO: 使用輪播(Carousel)元件放入以下兩頁內容 -->
-        <!-- 快捷鍵: b4-carousel-default -->
-        <!-- 內容輪播 -->
 
-        <!-- 內容輪播 end -->
-        <!-- 第一頁 內容 -->
-        <div class="row justify-content-center py-5">
-            <div class="col-sm-2 col-4">
-                <!-- 設定使用者照片變圓型 -->
-                <img class="w-100 rounded-circle" src="./img/reviewer-1.jpg" alt="user photo">
-            </div>
-            <div class="col-sm-6">
-                <h3 class="title">Food and beverage manager</h3>
-                <h4 class="name">Robert A. Welch</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo provident quisquam a deleniti laborum
-                    omnis dicta aliquam repellat deserunt accusantium. Esse velit atque deleniti. Earum maxime
-                    necessitatibus veritatis vitae libero eveniet, accusantium culpa voluptas ipsam nisi non id neque
-                    atque minus qui, natus ducimus dolores est, dolor beatae? Quis esse eius facilis minima aut cum vero
-                    ex dolore obcaecati sint?</p>
-            </div>
-        </div>
-        <!-- 第一頁 內容 結束 -->
-        <!-- 第二頁 內容 -->
-        <div class="row justify-content-center py-5">
-            <div class="col-sm-2 col-4">
-                <!-- 設定使用者照片變圓型 -->
-                <img class="w-100 rounded-circle" src="./img/reviewer-2.jpg" alt="user photo">
-            </div>
-            <div class="col-sm-6">
-                <h3 class="title">Environmental scientist</h3>
-                <h4 class="name">Lorraine J. Rollins</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo provident quisquam a deleniti laborum
-                    omnis dicta aliquam repellat deserunt accusantium. Esse velit atque deleniti. Earum maxime
-                    necessitatibus veritatis vitae libero eveniet, accusantium culpa voluptas ipsam nisi non id neque
-                    atque minus qui, natus ducimus dolores est, dolor beatae? Quis esse eius facilis minima aut cum vero
-                    ex dolore obcaecati sint?</p>
-            </div>
-        </div>
-        <!-- 第二頁 內容 結束 -->
-    </section>
-    <!-- reviewsSection end -->
     <!-- modalSection -->
     <section id="modalSection" class="bg-secondary py-5">
         <div class="container">
@@ -260,7 +216,25 @@
     </section>
     <!-- TODO: 加入彈出式視窗 Modal -->
     <!-- 彈出視窗 -->
-
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 彈出視窗 end-->
     <!-- modalSection end -->
     <!-- gallerySection -->
