@@ -23,3 +23,8 @@ $(".navbar .nav-link").click(function () {
     // 執行滑動動畫
 
 });
+
+// 取得現在的年份
+const year = new Date().getFullYear();
+// 將年份顯示在 id="yearShow" 的元素內
+$("#yearShow").text(year);
