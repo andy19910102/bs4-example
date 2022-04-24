@@ -30,7 +30,7 @@ button:focus {
 #header {
     border-radius: 0px;
     margin-bottom: 0px;
-    /* TODO: 加入背景圖片 */
+    /* TODO: 加入背景圖片 */
     /* background-image: url(""); */
 }
 
@@ -54,7 +54,7 @@ button:focus {
 
 .intro-box:hover {
     background: white;
-    box-shadow: 0px 22px 22px rgba(0,0,0,.25);
+    box-shadow: 0px 22px 22px rgba(0, 0, 0, .25);
     bottom: 7px;
 }
 
@@ -114,9 +114,7 @@ button:focus {
     filter: grayscale(0%);
 }
 
-.gallery-block:hover .gallery-text {
-    
-}
+.gallery-block:hover .gallery-text {}
 
 /* 放入背景圖片 */
 
@@ -174,7 +172,7 @@ footer ul {
 #goBackBtn {
     width: 40px;
     height: 40px;
-    border:none;
+    border: none;
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -231,6 +229,6 @@ footer ul {
     padding: 10px;
 }
 
-.right-part>p{
+.right-part>p {
     margin-bottom: 0;
 }
